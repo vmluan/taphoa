@@ -33,9 +33,9 @@
                 showaggregates: true,
                 selectionmode: 'singlecell',
                 columns: [
-                  { text: 'First Name', columntype: 'textbox', datafield: 'firstname', width: 170 },
-                  { text: 'Last Name', datafield: 'lastname', columntype: 'textbox', width: 170 },
-                  { text: 'Product', datafield: 'productname', width: 170,
+                  { text: 'Ma SP', columntype: 'textbox', datafield: 'firstname', width: 170 },
+                  { text: 'Ten SP', datafield: 'lastname', columntype: 'textbox', width: 170 },
+                  { text: 'Ten SP', datafield: 'productname', width: 170,
                       aggregates: ['count',
                           { 'Cappuccino Items':
                             function (aggregatedValue, currentValue) {
@@ -69,9 +69,9 @@
                       }
                      ]
                   },
-                  { text: 'Quantity', datafield: 'quantity', width: 85, cellsalign: 'right', cellsformat: 'n2'
+                  { text: 'So Luong', datafield: 'quantity', width: 85, cellsalign: 'right', cellsformat: 'n2'
                   },
-                  { text: 'Price', datafield: 'price', cellsalign: 'right', cellsformat: 'c2', aggregates: ['sum'] }
+                  { text: 'Gia', datafield: 'price', cellsalign: 'right', cellsformat: 'c2', aggregates: ['sum'] }
                 ]
             });
 			
