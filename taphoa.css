@@ -20,3 +20,15 @@ background-color: #eee;
 border-style:ridge;
 border-radius: 15px;
 }
+.ban-le-grid{
+padding-left: 15px;
+}
+
+.tap-hoa-aggregate{
+font-weight: bold;
+size: 14px;
+}
+
+.tap-hoa-done-button{
+width: 100%;
+}

@@ -17,7 +17,7 @@
                 ],
                 updaterow: function (rowid, rowdata) {
                     // synchronize with the server - send update command
-					alert('edit');	
+					
                 }
             };
 
@@ -56,12 +56,12 @@
                 columns: [
 				  { text: 'STT', columntype: 'textbox', datafield: 'id', width: 50, editable: false, align: 'center' },
 				  { text: 'Ma SP', columntype: 'textbox', datafield: 'maSP', width: 170, editable: false, align: 'center' },
-                  { text: 'Ten SP', datafield: 'tenSP', columntype: 'textbox', width: 400, editable: false, align: 'center' },
-                  { text: 'So Luong', datafield: 'quantity', width: 85, cellsalign: 'right', cellsformat: 'n2', editable: true, align: 'center'
+                  { text: 'Ten SP', datafield: 'tenSP', columntype: 'textbox', width: 300, editable: false, align: 'center' },
+                  { text: 'So Luong', datafield: 'quantity', width: 70, cellsalign: 'right', cellsformat: 'n2', editable: true, align: 'center'
                   },
-                  { text: 'Gia', datafield: 'price', cellsalign: 'right', cellsformat: 'c2', editable: false, width:85, align: 'center' },
-				  { text: 'Giam Gia', datafield: 'giamgia', cellsalign: 'right', cellsformat: 'c2', editable: false, width:85, align: 'center' },
-				  { text: 'Thanh Tien', datafield: 'total', cellsalign: 'right', cellsformat: 'c2', aggregates: ['sum'], align: 'center' }
+                  { text: 'Gia', datafield: 'price', cellsalign: 'right', cellsformat: 'c', editable: false, width:100, align: 'center' },
+				  { text: 'Giam Gia', datafield: 'giamgia', cellsalign: 'right', cellsformat: 'c', editable: false, width:100, align: 'center' },
+				  { text: 'Thanh Tien', datafield: 'total', cellsalign: 'right', cellsformat: 'c', aggregates: ['sum'], align: 'center', editable:false }
                 ]
             });
 			
@@ -87,7 +87,7 @@ function generatedata(rowscount, hasNullValues) {
 
     var priceValues =
     [
-         "2.25", "1.5"
+         "15000", "100000"
     ];
 
     for (var i = 0; i < rowscount; i++) {

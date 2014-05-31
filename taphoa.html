@@ -92,7 +92,7 @@
 
       <div class="tap-hoa-main-div" id="san-pham">
 
-		<div>
+
 		   <div class="form-group col-md-3">
 			  <label for="name">Ma san pham</label>
 			  <input type="text" class="form-control" id="ten-khach-hang" 
@@ -126,34 +126,58 @@
 		   
 		<br>
 		<br>
-		</div>
+
    
     </div> <!-- /San Pham -->
 
 
-<div class="row">
-    <div class="col-md-2 col-md-offset-1"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-</div>	
+
       <!-- Main component for a primary marketing message or call to action -->
       <!--div class="jumbotron" -->
 	  <div class="tap-hoa-main-div">
-        <h3 >Danh sach san pham ban le</h3>
-		<div id='jqxWidget'>
+        <legend >Danh sach san pham</legend>
+		<div id="jqxWidget" class="ban-le-grid" >
 			<div id="jqxgrid"></div>
 		</div>
 		<br/>
-	<p><a class="btn btn-lg btn-success" href="#" role="button">Xong</a></p>	
+
+	   <div class="form-group col-md-4">
+		  <label for="name">Tien khach dua</label>
+		  <input type="text" class="form-control" id="tien_khach_dua" 
+			 >
+	   </div>
+
+	   <div class="form-group col-md-4">
+		  <label for="name">Thoi lai</label>
+		  <input type="text" class="form-control" id="thoi_lai" readonly>
+	   </div>
+	   
+	   <div class="form-group col-md-2" align="right">
+			 <label for="name">    </label>
+			<p><a class="btn btn-lg btn-success tap-hoa-done-button" href="#" role="button"> Xong </a></p>
+	   </div>
+	   
+	   <div class="form-group col-md-2" align="right">
+			 <label for="name">    </label>
+			<p><a class="btn btn-lg btn-primary" href="#" role="button"> In </a></p>
+	   </div>
+	   
+		<br>
+		<br>
+	
+	
     </div> 
 	
       <div class="footer">
         <p>&copy; Company 2014</p>
       </div>	
-	
+
+	  
 	</div><!-- /container -->
+	
+	
+	
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -195,7 +219,8 @@
 			$("#gia").removeAttr("style");
         });
     </script>
-	
-  </body>
   </div>
+  
+  </body>
+
 </html>
