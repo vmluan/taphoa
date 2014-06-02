@@ -135,7 +135,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <!--div class="jumbotron" -->
 	  <div class="tap-hoa-main-div">
-        <legend >Danh sach san pham</legend>
+        <label >Danh sach san pham chi tiet</label>
 		<div id="jqxWidget" class="ban-le-grid" >
 			<div id="jqxgrid"></div>
 		</div>
@@ -143,13 +143,14 @@
 
 	   <div class="form-group col-md-4">
 		  <label for="name">Tien khach dua</label>
-		  <input type="text" class="form-control" id="tien_khach_dua" 
-			 >
+			<div id='tien-khach-dua'>
+			</div>		  
 	   </div>
-
+	
 	   <div class="form-group col-md-4">
 		  <label for="name">Thoi lai</label>
-		  <input type="text" class="form-control" id="thoi_lai" readonly>
+			<div id='tien-thoi-lai'>
+			</div>		  
 	   </div>
 	   
 	   <div class="form-group col-md-2" align="right">
@@ -205,7 +206,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#gia").jqxNumberInput({ symbol: ' VND', disabled: true,  spinButtons: false, decimalDigits: 0, symbolPosition: 'right'
-				, promptChar: "_", groupSeparator: "." });
+				,groupSeparator: ',', spinMode: 'simple', width: '154px' });
 			$("#gia").val(1000);
 			
 			 var dssanpham = new Array("thung bia 333", "thung pepsi", "lon bia 333");
@@ -214,9 +215,16 @@
 			$("#ten_san_pham").addClass("form-control");
 			
 			$("#gia").removeClass();
-			//$("#gia").addClass("form-control");
-			
+
 			$("#gia").removeAttr("style");
+			$("#gia").find("input").removeClass();
+		//	$("#gia input:first").css("border", "1px"); //maybe the jquerygrid always load it functions after this code is called.
+		
+            $("#tien-khach-dua").jqxNumberInput({ symbol: ' VND',  spinButtons: true, decimalDigits: 0, symbolPosition: 'right'
+				,groupSeparator: '.', spinMode: 'simple', width: '335px', spinButtonsStep: 5000, min: 0 });
+            $("#tien-thoi-lai").jqxNumberInput({ symbol: ' VND',  spinButtons: false, decimalDigits: 0, symbolPosition: 'right'
+				,groupSeparator: '.', spinMode: 'simple', width: '335px', min: 0, disabled:true});		
+
         });
     </script>
   </div>

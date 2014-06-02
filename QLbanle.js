@@ -1,5 +1,5 @@
 ﻿            // prepare the data
-            var data = generatedata(3);
+            var data = generatedata(30);
 
             var source =
             {
@@ -34,7 +34,8 @@
                 showaggregates: true,
             //    selectionmode: 'singlecell',
 				showtoolbar: true,
-				autoheight: true,
+				autoheight: false,
+				height: 250,
                 rendertoolbar: function (toolbar) {
                     var me = this;
                     var container = $("<div style='margin: 5px;'></div>");
