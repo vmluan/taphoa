@@ -8,10 +8,53 @@ position: relative;
 left: 100%;
 color: red;
 }
-
 .tap-hoa-main-div{
 padding-top: 10px;
-padding-bottom: 40px;
+padding-bottom: 84px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 10px;
+color: inherit;
+background-color: #eee;
+border-style:ridge;
+border-radius: 15px;
+}
+.thong-tin-daily-div{
+padding-top: 10px;
+padding-bottom: 45px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 10px;
+color: inherit;
+background-color: #eee;
+border-style:ridge;
+border-radius: 15px;
+}
+.tim-sanpham-div{
+padding-top: 10px;
+padding-bottom: 45px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 10px;
+color: inherit;
+background-color: #eee;
+border-style:ridge;
+border-radius: 15px;
+}
+.nhap-hang-main-div{
+padding-top: 10px;
+padding-bottom: 75px;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 10px;
+color: inherit;
+background-color: #eee;
+border-style:ridge;
+border-radius: 15px;
+}
+.quan-ly-sanpham-div{
+padding-top: 10px;
+padding-bottom: 75px;
 padding-left: 20px;
 padding-right: 20px;
 margin-bottom: 10px;
